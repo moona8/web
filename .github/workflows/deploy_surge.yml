@@ -1,8 +1,8 @@
-name:  ci_surge
+name:  website
 
 on:
   push: 
-    branches: [ master ]
+    branches: [ web ]
 
 
 jobs:
