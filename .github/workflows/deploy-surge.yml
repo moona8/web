@@ -1,10 +1,9 @@
-name: web
+name:  ci_surge
 
 on:
   push: 
     branches: [ github-actions ]
-  pull_request:
-    branches: [ github-actions ]
+
 
 jobs:
   build:
