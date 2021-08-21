@@ -2,7 +2,7 @@ name:  ci_surge
 
 on:
   push: 
-    branches: [ github-actions ]
+    branches: [ master ]
 
 
 jobs:
@@ -17,5 +17,5 @@ jobs:
           node-version: 12
       - name: Install Surge
         run: npm install --global surge
-      - name:  Surge
+      - name:  deploy
         run: surge ./ github_actions_setup_moona.surge.sh --token ${{ secrets.SURGE_TOKEN }}
