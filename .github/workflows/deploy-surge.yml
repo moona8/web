@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: 12
       - name: Install Surge
-        run: npm install -g surge
+        run: npm install --global surge
       - name:  Surge
         run: surge ./  moona.surge.sh --token ${{ secrets.SURGE_TOKEN }}
