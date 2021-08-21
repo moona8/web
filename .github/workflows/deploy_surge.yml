@@ -18,4 +18,4 @@ jobs:
       - name: Install Surge
         run: npm install --global surge
       - name:  Surge
-        run: surge ./ moona-web.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ github_actions_setup_moona.surge.sh --token ${{ secrets.SURGE_TOKEN }}
