@@ -13,9 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2-beta
         with:
-          node-version: 14
+          node-version: 12
       - name: Install Surge
         run: npm install -g surge
       - name:  Surge
